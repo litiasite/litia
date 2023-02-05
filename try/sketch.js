@@ -35,7 +35,7 @@ function preload() {
   video = createVideo(["try/assets/principale.mp4"], vidLoad);
   //video = loadImage('img.jpg');
   noiseImg = loadImage("try/assets/noiseTexture.png");
-  whiteNoise = createAudio(""); //whitenoise-short.mp3
+  whiteNoise = createAudio("try/assets/whitenoise-short.mp3"); 
 }
 
 function setup() {
