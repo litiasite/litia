@@ -31,11 +31,11 @@ let loadingTl = gsap.timeline({
 let iphoneTex = "wave";
 
 const toLoad = [
-  {name: "specta", file: "assets/specta/Specta.gltf", group: new THREE.Group()},
-  {name: "basetta", file: "assets/basetta/basetta.gltf", group: new THREE.Group()},
-  {name: "iphone", file: "assets/dispositivi/iphone/scene.gltf", group: new THREE.Group()},
-  {name: "mac", file: "assets/dispositivi/macbook/Macbook.gltf", group: new THREE.Group()},
-  {name: "tv", file: "assets/dispositivi/tv/tv.gltf", group: new THREE.Group()}
+  {name: "specta", file: "site/assets/specta/Specta.gltf", group: new THREE.Group()},
+  {name: "basetta", file: "site/assets/basetta/basetta.gltf", group: new THREE.Group()},
+  {name: "iphone", file: "site/assets/dispositivi/iphone/scene.gltf", group: new THREE.Group()},
+  {name: "mac", file: "site/assets/dispositivi/macbook/Macbook.gltf", group: new THREE.Group()},
+  {name: "tv", file: "site/assets/dispositivi/tv/tv.gltf", group: new THREE.Group()}
 ]
 
 const models = {};
@@ -48,8 +48,8 @@ const gltfLoader = new GLTFLoader(LoadingManager)
 const textureLoader = new THREE.TextureLoader(LoadingManager)
 const hdriloader = new RGBELoader(LoadingManager);
 
-var appTex = textureLoader.load('assets/dispositivi/iphone/textures/ekran_baseColor_1.png');
-var waveTex = textureLoader.load('assets/dispositivi/iphone/textures/ekran_baseColor.png');
+var appTex = textureLoader.load('site/assets/dispositivi/iphone/textures/ekran_baseColor_1.png');
+var waveTex = textureLoader.load('site/assets/dispositivi/iphone/textures/ekran_baseColor.png');
 
 toLoad.forEach(item=>{
   gltfLoader.load(item.file, (model)=>{
