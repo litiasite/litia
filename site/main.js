@@ -321,7 +321,7 @@ function desktopAnimation() {
   tl.from(".buynow", {y:"100vh", delay: 0.3}, '<')
   section+=2; 
 
-  tl.to(specta.position, {y: 4, duration: 0.5}, section + 0.5)
+  tl.to(specta.position, {y: 3, duration: 0.5}, section + 0.5)
   tl.to(".buynow", {y: "-10vh", duration: 0.5}, '<')
   tl.from("footer", {y: "120%", duration: 0.5}, '<')
 }
@@ -375,6 +375,7 @@ function mobileAnimation() {
   tl.to(basetta.position, {y:4.55}, '<')
   tl.to(".personal-silencer", {y:"-10vh", opacity:0}, '<')
   tl.from(".video-container", {y: "100vh"}, '<')
+  tl.to(".gradient", {opacity: 1, height: "150%"}, '<')
   section += 2;
   
   //in posizione per dopo il video
@@ -389,6 +390,7 @@ function mobileAnimation() {
   tl.to(".video-container", {y: "-100vh"}, section - 1)
   tl.to(specta.position, {x:0, y:30, z:0}, '<')
   tl.from(".plug-and-play", {y:"2vh", opacity:0, duration: 1}, section+1)
+  tl.to(".gradient", {opacity: 0, height: "100%", duration: 1}, section + 1)
   section +=2
 
 
