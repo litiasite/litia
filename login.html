@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/logo.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-style.css">
+    <link rel="stylesheet" href="login-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Litia | Log in</title>
+  </head>
+  <body>
+    
+    
+    <!-- header -->
+    <header>
+      
+      <div class="header-left">
+        <div class="logo"><a href="index.html#sec0"><img src="assets\Immagini\Litia-logo-bianco.png" alt=""></div></a>
+        <li class="desktop-menu menu-left">
+          <ul><a href="specta.html" class="whitetext menulink" >Specta</a></ul>
+          <ul><a href="about.html" class="whitetext menulink" >About</a></ul>
+        </li>
+      </div>
+      
+      
+      <div class="desktop-menu menu-right">
+          <a class="whitetext menulink" href="login.html">Login</a>
+          <a class="whitetext menulink" href="cart.html">Cart | 0</a>
+      </div>
+
+      <div class="burger-menu" onclick="openMobileMenu()">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+      
+    </header>
+
+    <div class="mobile-menu">
+      <div class="cross" onclick="closeMobileMenu()">
+        <div class="cross-line"></div>
+        <div class="cross-line"></div>
+      </div>
+      <li><a href="specta.html">Specta</a></li>
+      <div class="divider"></div>
+      <li><a href="about.html">About</a></li>
+      <div class="divider"></div>
+      <li><a href="login.html">Login</a></li>
+      <div class="divider"></div>
+      <li><a href="cart.html">Cart | 0</a></li>
+    </div>
+
+
+    <div class="header-placeholder"></div>
+    <h3>Log in</h3>
+    <div class="divider"></div>
+
+    <section class="login-container">
+      
+      <input class="input" type="email" placeholder="Email Adress" autofocus>
+      <div class="divider"></div>
+      <input class="input" type="password" placeholder="Password">
+      <div class="divider"></div>
+    </section>
+
+    <section>
+      <a href="index.html" class="button">Log in</a>
+    </section>
+    
+    
+    <footer style="position: absolute; bottom: 10px; width: calc(100% - 20px);">
+
+      <div class="footer-top table-container footer-table">
+        <p>info@litia.com</p>
+        <p>22 Needham RoadLondon <br>United Kingdom</p>
+      </div>
+
+      <div class="divider"></div>
+      
+      <div class="footer-bottom table-container footer-table">
+        <p>© 2023 Litia</p>
+        <p>Terms & Conditions</p>
+        <p>Cookies</p>
+        <p>English (UK)</p>
+      </div>
+      
+    </footer>        
+
+   
+    <script src="app.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/logo.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Litia | Specta</title>
+  </head>
+  <body>
+    
+    
+    <!-- header -->
+    <header>
+      
+      <div class="header-left">
+        <div class="logo"><a href="index.html#sec0"><img src="assets\Immagini\Litia-logo-bianco.png" alt=""></div></a>
+        <li class="desktop-menu menu-left">
+          <ul><a href="specta.html" class="whitetext menulink" >Specta</a></ul>
+          <ul><a href="about.html" class="whitetext menulink" >About</a></ul>
+        </li>
+      </div>
+      
+      
+      <div class="desktop-menu menu-right">
+          <a class="whitetext menulink" href="login.html">Login</a>
+          <a class="whitetext menulink" href="cart.html">Cart | 0</a>
+      </div>
+
+      <div class="burger-menu" onclick="openMobileMenu()">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+      
+    </header>
+
+    <div class="mobile-menu">
+      <div class="cross" onclick="closeMobileMenu()">
+        <div class="cross-line"></div>
+        <div class="cross-line"></div>
+      </div>
+      <li><a href="specta.html">Specta</a></li>
+      <div class="divider"></div>
+      <li><a href="about.html">About</a></li>
+      <div class="divider"></div>
+      <li><a href="login.html">Login</a></li>
+      <div class="divider"></div>
+      <li><a href="cart.html">Cart | 0</a></li>
+    </div>
+    
+    <div class="header-placeholder"></div>
+
+    <div class="spacebetween product">
+      <div class="gallery">
+        <div class="span-2 active"><img src="assets/Immagini/specta-3-4.jpg" alt=""></div>
+        <div class="span-1"><img src="assets/Immagini/specta-front.jpg" alt=""></div>
+        <div class="span-1"><img src="assets/Immagini/scpecta-box-front.jpg" alt=""></div>
+        <div class="span-2"><img class="desktop-img" src="assets/Immagini/specta-kit.jpg" alt=""> <img class="mobile-img" src="assets/Immagini/specta-kit-mobile.jpg" alt=""> </div>
+        <div class="span-1"><img class="desktop-img" src="assets/Immagini/specta-box-open.jpg" alt=""><img class="mobile-img" src="assets/Immagini/specta-box-open-mobile.jpg" alt=""></div>
+        <div class="span-1"><img src="assets/Immagini/specta-hand.jpg" alt=""></div>
+        <div class="loop-image span-1"><img src="assets/Immagini/specta-3-4.jpg" alt=""></div>
+      </div>
+
+      <div class="product-text">
+        <h2>SPECTA®</h2>
+        <div class="divider"></div>
+
+        <p style="max-width: 100%;">Specta is a high tech product that protects you from eco-anxious content by showing you the millennial rock's perspective on climate change and allowing you to widen your vision and silence what may hurt you.</p>
+          
+
+        <section class="price">
+          <h4>399£</h4>
+          <a href="cart.html" class="button">Add to cart</a>
+        </section>
+
+        
+        <section class="specs">
+          <p>Detailed information</p>
+          <div class="divider"></div>
+          <div class="table-container"><p>Model</p> <p>G31</p></div>
+          <div class="divider"></div>
+          <div class="table-container"><p>Color</p> <p>White</p></div>
+          <div class="divider"></div>
+          <div class="table-container"><p>Year</p> <p>2023</p></div>
+          <div class="divider"></div>
+          <div class="table-container"><p>Technical Specification</p> <p> Dimensions <br> Weight <br> Battery <br> Languages <br> Processor <br> Memory <br> Connection <br> Ai <br> </p> <p> 11/5/3.5 cm <br> 115 g <br> 800 mA/h <br> EN/IT/DE/FR/RU <br> Adafruit gpt-61 <br> 8 GB <br> Bluetooth 6.0 <br> A-bio v10.2.1 <br> </p></div>
+          <div class="divider"></div>
+          <div class="table-container"><p>Warranty</p> <p>5 years</p></div>
+        </section>
+
+      </div>
+    </div>
+
+    
+    
+
+    
+
+    
+    
+    <footer>
+
+      <div class="footer-top table-container footer-table">
+        <p>info@litia.com</p>
+        <p>22 Needham RoadLondon <br>United Kingdom</p>
+      </div>
+
+      <div class="divider"></div>
+      
+      <div class="footer-bottom table-container footer-table">
+        <p>© 2023 Litia</p>
+        <p>Terms & Conditions</p>
+        <p>Cookies</p>
+        <p>English (UK)</p>
+      </div>
+    </footer>    
+
+    <script src="app.js"></script>
+    <script src="product.js"></script>
+    
+  </body>
+</html>

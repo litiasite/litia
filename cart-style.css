@@ -1,0 +1,126 @@
+:root {
+  
+    --fs-xl: clamp(50px, 40px + 3vw, 100px);
+    --fs-l: clamp(30px, 20px + 3vw, 80px);
+    --fs-m: clamp(2rem, 5vw + 1rem, 2.8rem);
+    --fs-sm: clamp(20px, 30px - 0.5vw , 26px);
+    --fs-s: clamp(16px, 20px - 0.5vw, 18px);
+    --fs-xs: clamp(0.8rem, 4vw + 0.64rem, 0.88rem);
+  }
+  
+p {max-width: 50vw;}
+
+p, a, ul, h4, h3, h2, h1, input {
+    color: black;
+    mix-blend-mode: normal;
+}
+
+
+header p, header a {
+    color: white;
+  }
+
+
+.divider {
+    margin: 1rem 0
+}
+
+.header-placeholder {height: calc(6vh);}
+
+.product-text {width: 50%;}
+
+.product-text h1 {font-size: 10.25vw;}
+
+.table-container p {max-width: 33%;}
+
+.counter {width: 5em; display: flex; align-items: center; position: absolute; left: -0.5em}
+.counter p {max-width: 1.2em; text-align: center; width: 33%;}
+.plusminus {font-size: var(--fs-sm); cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */}
+.plusminus:hover {opacity: 0.5;}
+
+.price {
+    margin: 100px 0;
+}
+
+.price :nth-child(n) {margin: 30px 0;}
+
+.header-placeholder {margin-bottom: 1rem;}
+
+.span-1 img, .span-2 img {width: 100%; height: 100%; object-fit: cover;}
+
+section {
+    height: auto;
+    width: auto;
+    margin: 3rem 0
+}
+
+.gallery {
+    width: auto; margin-right: 20px;
+    display: grid; gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+
+.gallery :nth-child(n) {overflow: hidden; transition: 1s;}
+
+.gallery :nth-child(n) :hover {scale: 1.02;}
+
+.span-1 {height: 50vh;}
+
+.span-2 {
+    grid-column: span 2;
+    height: 89vh
+}
+
+.loop-image {display: none;}
+
+.mobile-cart {display: none}
+
+@media only screen and (max-width: 768px) {
+
+    .desktop-cart {display: none}
+    .mobile-cart {display: block;}
+
+    p {max-width: none;}
+
+    .product {flex-direction: column;}
+
+    .product-text {width: 100%;}
+
+    .product-text h1 { font-size: 20vw; }
+
+    .table-container {justify-content: space-between;}
+
+    .table-container p {width: auto; max-width: none; flex: none;}
+
+    .counter p {width: 1em;}
+    .plusminus {font-size: var(--fs-sm); cursor: pointer; transition: 0.5s;}
+    
+    .counter {max-width: none; flex: none; width: fit-content; position: inherit;}
+
+    .footer-table {justify-content: flex-start;}
+
+    .footer-table p {max-width: none; flex: auto;}
+
+
+    .gallery {margin-right: 0; display: flex; overflow: auto; gap: 0px;
+        scroll-snap-type: x mandatory; scroll-behavior: smooth;}
+
+    .gallery:-webkit-scrollbar {display: none;}
+
+    .gallery :nth-child(n) {width: 100%; height: 70vh; flex: none; scroll-snap-align: center;
+    }
+
+    .loop-image {display: block;}
+
+    img { animation-name: zoomin ; animation-duration: 5s; }
+
+    @keyframes zoomin {
+        from {scale: 1;} 
+        to {scale: 1.05;}       
+    }
+
+}
