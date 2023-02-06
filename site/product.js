@@ -26,3 +26,17 @@ function draw() {
         }
     }
 }
+
+let colors = document.querySelectorAll(".color")
+
+colors.forEach( (color) => {
+    color.addEventListener("click", ()=>{
+        colors.forEach( (elem) => {
+            if (elem == color) {
+                elem.style.outlineColor = "rgba(0,0,0,1)"
+                document.getElementById("color-spec").innerHTML = elem.id
+            }
+            else {elem.style.outlineColor = "rgba(0,0,0,0)"}
+        })
+    })
+})
