@@ -83,11 +83,11 @@ function draw() {
 
   //console.log(b);
 
-  if (luce_basetta > 100 && clicked == false) {
+  if (luce_basetta > 20 && clicked == false) {
     clicked = true;
     morphing = true;
     // console.log(b);
-  } else if (luce_basetta <= 100 && morphing == false) {
+  } else if (luce_basetta <= 20 && morphing == false) {
     morphing = true;
     clicked = false;
   }
@@ -132,6 +132,7 @@ function draw() {
       goalfreq = 1.5 * sin(frameCount * 0.001) + 3;
       goalamp = map(amplitudeAngle, -90, 90, -1.0, 1.0, true); //l'altezza a cui arrivare dipende dalla mouseX
       goalxpos = map(xposangle, -180, 180, -15.0, 15.0);
+      console.log(goalxpos);
 
       let d_freq = goalfreq - freq;
       freq += d_freq * ineasing;
@@ -200,7 +201,7 @@ setInterval(function () {
   fetch(api_url_basetta).then((response) => {
     response.text().then((b) => {
       luce_basetta = b;
-      console.log(luce_basetta);
+      //console.log(luce_basetta);
     });
   });
 }, 200);
