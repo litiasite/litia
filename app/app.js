@@ -125,7 +125,7 @@ function draw() {
     response.text().then((b) => {
       luce_basetta = b;
 
-      if (luce_basetta > 100) {
+      if (luce_basetta > 20) {
         spectaOn = true;
 
         console.log(luce_basetta);
