@@ -93,7 +93,7 @@ function setup() {
 
 // dati dalla basetta
 let luce_basetta;
-let api_url_basetta = "http://172.20.10.2/";
+let api_url_basetta = "http://172.20.10.3/";
 let spectaOn = false;
 
 function contentIncrease() {
