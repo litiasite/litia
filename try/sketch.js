@@ -27,8 +27,12 @@ let luce_basetta;
 
 //http://172.20.10.8/ specta
 //http://172.20.10.13/ basetta
-let api_url = "http://172.20.10.13/";
-let api_url_basetta = "http://172.20.10.2/";
+
+// let api_url = "http://172.20.10.13/";
+// let api_url_basetta = "http://172.20.10.2/";
+
+let api_url = "http://172.20.10.5/";
+let api_url_basetta = "http://172.20.10.6/";
 
 function preload() {
   myShader = loadShader("try/shader/shader.vert", "try/shader/shader.frag");
